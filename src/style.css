@@ -1,0 +1,243 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 173, 21);
+    color: #333;
+}
+
+.header {
+    background-color: rgba(31, 0, 54, 0.968);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+@media(max-width:479px){
+  .book-detail h1{
+    font-size: 1.4rem;
+  }
+  .book-detail p{
+    font-size: 0.8rem;
+  }
+}
+@media(max-width: 300px){
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .book-detail h1{
+      font-size: 0.8rem;
+    }
+    /* .book-detail p{
+      font-size: 0.4rem;
+    } */
+   
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: rgb(255, 9, 9);
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; 
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: auto; 
+  }
+  .navbar ul {
+    margin-left: auto;
+  }
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    
+    font-weight: bold;
+    font-size: medium;
+}
+
+.header ul a:hover{
+    color:red;
+}
+/* .header ul a.active {
+    color: red; 
+    background-color: rgba(0, 0, 0, 0.2); 
+  } */
+
+ /* --------------------- */
+.home-page {
+    padding: 20px;
+      text-align: center;
+}
+  
+.popular-books ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+  }
+.popular-books h2{
+    color: rgb(225, 0, 0);
+    font-size: 1.8rem;
+    
+}
+.popular-books li{
+  padding: 10px 10px;
+  background-color: #e2dddd;
+  border-radius: 4px;
+}
+.popular-books li a {
+  text-decoration: none;
+  color:#013648;
+
+}
+.categories ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.categories h2{
+  margin-top:35px;
+}
+.categories button {
+    padding: 10px 15px;
+    background-color: #035975;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ /* ----------------------- */
+ .browse-books-page {
+    padding: 20px;
+    max-width:800px;
+    margin: 0 auto;
+}
+.browse-books-page h2{
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.search-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.book-list .nofound{
+    font-size: 1.4rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* -------- */
+.book-item a, .book-detail a{
+    margin-top: 10px;
+    display: inline-block;
+    background: #0c5067;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration:none;
+}
+
+.book-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+/* --------------------------------- */
+.book-detail {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 60px ;
+}
+.book-detail img{
+  max-width: 30%;
+  height: auto;
+  max-height: 250px;
+  float: left;
+  margin-right: 20px;
+}
+.add-book {
+  padding: 30px 100px 10px 100px;
+  background-color: rgb(243, 171, 38);
+  /* border: 1px solid #cf0000; */
+  border-radius: 5px;
+  
+}
+.add-book form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* width: 100%; */
+}
+
+.add-book label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(198, 0, 0);
+}
+
+.add-book input,
+.add-book textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+.add-book button {
+    padding: 10px;
+    background-color:red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+}
+.not-found {
+    text-align: center;
+    padding: 20px;
+}
+.footer {
+    background-color: rgba(31, 0, 54, 0.968);
+    color: white;
+    padding: 18px 0;
+    text-align: center;
+    margin-top: 28px;
+}
